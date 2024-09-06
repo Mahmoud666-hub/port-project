@@ -18,12 +18,11 @@
                       Our Restaurant
                     </h1>
                     <h5>
-                      {% comment %} Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum quam quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste magni quos nihil ducimus libero ipsam. {% endcomment %}
                       Welcome to a world where flavor meets artistry, and every dish is crafted with passion and precision. From farm-fresh ingredients to masterfully prepared meals, we invite you to savor an unforgettable dining experience that delights your senses and warms your heart. Whether you're here for a casual lunch, a family gathering, or a special celebration, our commitment to excellence ensures every visit leaves you craving more.</h5>
                       <div class="btn-box">
-                      <a href="" class="btn1">
+                      {% comment %} <a href="" class="btn1">
                         Order Now
-                      </a>
+                      </a> {% endcomment %}
                     </div>
                   </div>
                 </div>
@@ -75,15 +74,7 @@
           </div>
           {% endcomment %}
         </div>
-        <div class="container">
-          <ol class="carousel-indicators">
-            <li data-target="#customCarousel1" data-slide-to="0" class="active"></li>
-            {% comment "" %}
-            <li data-target="#customCarousel1" data-slide-to="1"></li>
-            <li data-target="#customCarousel1" data-slide-to="2"></li>
-            {% endcomment %}
-          </ol>
-        </div>
+        
       </div>
 
     </section>
@@ -342,6 +333,7 @@
             </div>
           </div>
           {% comment "" %}
+          {% endcomment %}
           <div class="col-sm-6 col-lg-4 all burger">
             <div class="box">
               <div>
@@ -950,6 +942,7 @@
               </div>
             </div>
           </div>
+          {% comment "" %}
           {% endcomment %}
           {% endfor %}
         </div>

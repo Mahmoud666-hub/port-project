@@ -997,7 +997,7 @@ a:focus {
 }
 
 .footer_section .footer-info p {
-  color: #ffffff;
+  color: rgb(219, 218, 216);
   margin: 0;
 }
 
@@ -1005,3 +1005,5 @@ a:focus {
   color: inherit;
 }
 /*# sourceMappingURL=style.css.map */
+
+
