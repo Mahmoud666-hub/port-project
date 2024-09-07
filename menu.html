@@ -1,41 +1,11 @@
 {% extends "base.html" %}
-{% block home_status %}active{% endblock home_status %}
 
+{% block class %}class="sub_page"{% endblock class %}
+{% block menu_status %}active{% endblock menu_status %}
 {% load static %}
 
-{% block slider %}
+{% block main %}
 
-    <!-- slider section -->
-    <section class="slider_section ">
-      <div id="customCarousel1" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="container ">
-              <div class="row">
-                <div class="col-md-7 col-lg-6 ">
-                  <div class="detail-box">
-                    <h1>
-                      Our Restaurant
-                    </h1>
-                    <h5>
-                      Welcome to a world where flavor meets artistry, and every dish is crafted with passion and precision. From farm-fresh ingredients to masterfully prepared meals, we invite you to savor an unforgettable dining experience that delights your senses and warms your heart. Whether you're here for a casual lunch, a family gathering, or a special celebration, our commitment to excellence ensures every visit leaves you craving more.
-                    </h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        
-      </div>
-
-    </section>
-    <!-- end slider section -->
-    
-    {% endblock slider %}
-
-    {% block main %}
 
   <!-- food section -->
 
@@ -753,109 +723,6 @@
   <!-- end food section -->
 
 
-    <!-- about section -->
-
-    <section class="about_section layout_padding">
-      <div class="container  ">
-  
-        <div class="row">
-          <div class="col-md-6 ">
-            <div class="img-box">
-              <img src="{% static 'images/new2.png' %} " alt="">
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="detail-box">
-              <div class="heading_container">
-                <h2>
-                  We Are bon appetit
-                </h2>
-                <p>
-                  At bon appetit, we blend culinary excellence with warm hospitality. Our journey began with a passion for creating exceptional dining experiences. From our cozy ambiance to our commitment to quality ingredients, every detail reflects our love for food and community. Join us as we invite you to savor the stories behind each dish—a delicious tale waiting to unfold
-                </p>
-              </div>
-             
-                
-                <div>
-                  <p>
-                  {% for i in data %}
-                  {{ i.Description|safe }}
-                  {% endfor %}
-                </p>
-               </div>
-               
-             
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  
-    <!-- end about section -->
-
-
-  
-  <!-- book section -->
-   <section class="book_section layout_padding">
-    <div class="container">
-      <div class="heading_container">
-        <h2>
-          Book A Table
-        </h2>
-      </div>
-      <div class="row">
-        <div class="col-md-6">
-          <div class="form_container">
-            <form action="{% url "Book_Table" %}" method='POST'>{% csrf_token %}
-              <div>
-                <input type="text" class="form-control" name="user_name" required placeholder="Your Name" />
-              </div>
-              <div>
-                <input type="text" class="form-control" name="phone_number" required placeholder="Phone Number" />
-              </div>
-              <div>
-                <input type="email" class="form-control" name="user_email" placeholder="Your Email" />
-              </div>
-              <div>
-                <select class="form-control nice-select wide" required name="total_person">
-                  <option value="" disabled selected>
-                    How many persons?
-                  </option>
-                  <option value="2">
-                    2
-                  </option>
-                  <option value="3">
-                    3
-                  </option>
-                  <option value="4">
-                    4
-                  </option>
-                  <option value="5">
-                    5
-                  </option>
-                </select>
-              </div>
-              <div>
-                <input type="date" required name="booking_data" class="form-control">
-              </div>
-              <div class="btn_box">
-                <button>
-                  Book Now
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="map_container ">
-            <div id="googleMap"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> 
-  <!-- end book section -->
-
-
 
 {% endblock main %}
+
