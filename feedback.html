@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="Static/images/favicon.png" type="">
+
+  <title> bon appetit </title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="Static/css/bootstrap.css" />
+
+  <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <!-- nice select  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha512-CruCP+TD3yXzlvvijET8wV5WxxEh5H8P4cmz0RFbKK6FlZ2sYl3AEsKlLPHbniXKSrDdFewhbmBK5skbdsASbQ==" crossorigin="anonymous" />
+  <!-- font awesome style -->
+  <link href="Static/css/font-awesome.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="Static/css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="Static/css/responsive.css" rel="stylesheet" />
+  <style>
+  
+    @import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
+
+
+  body{
+  
+    text-align: center;
+    background: #2b2828;
+    color:  black;
+    min-width: 350px;
+  }
+  
+  
+  #form-outer {
+    background-color: white;
+    margin: 20px auto;
+    border-radius: 4px;
+    width: 75%;
+    max-width: 900px;
+    padding: 10px;
+    padding-top: 20px;
+    font-size: 20px;
+  }
+  
+  .labels {
+    display: inline-block;
+    text-align: right;
+    width: 40%;
+    padding: 5px;
+    vertical-align: top;
+    margin-top: 10px;
+  }
+  
+  .rightTab {
+    display: inline-block;
+    text-align: left;
+    width: 48%;
+    vertical-align: middle;
+  }
+  
+  .input-field {
+    height: 20px;
+    width: 280px;
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid #c0c0c0;
+    border-radius: 2px;
+  }
+  
+  #userAge {
+    width: 40px;
+  }
+  
+  .userRatings,
+  input[type="checkbox"] {
+    float: left;
+    margin-right: 5px;
+  }
+  
+  
+  
+  
+  .dropdown {
+    height: 35px;
+    width: 140px;
+    padding: 5px;
+    margin: 10px;  
+    margin-top: 15px;
+    border: 1px solid #c0c0c0;
+    border-radius: 2px;
+  }
+  
+  .radio, .checkbox {
+    position: relative;
+    left: -43px;
+    margin-left: 10px;
+    display: block;
+    padding-bottom: 10px;
+  }
+  
+  @media screen and (max-width: 833px) {
+    .input-field {
+      width: 80%;
+    }
+    select {
+      width: 90%;
+    }
+  }
+  
+  @media screen and (max-width: 520px) {
+    .labels {
+      width: 100%;
+      text-align: left;
+    }
+    .rightTab {
+      width: 80%;
+      float: left;
+    }
+    .input-field {
+      width: 100%;
+    }
+    select {
+      width: 100%;
+    }
+  }
+  </style>
+
+
+</head>
+
+
+      <body>
+      
+        <div class="hero_area">
+          <div class="bg-box">
+            <img src="Static/images/44.jpg" alt="">
+          </div>
+      
+          <!-- header section strats -->
+          <header class="header_section">
+            <div class="container">
+              <nav class="navbar navbar-expand-lg custom_nav-container ">
+                <a class="navbar-brand" href="index.html">
+                  <span>
+                    bon appetit
+                  </span>
+                </a>
+      
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class=""> </span>
+                </button>
+      
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav  mx-auto ">
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link " href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="book_table.html">Book Table</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="feedback.html">Feedback</a>
+                    </li>
+                  </ul>
+                  <div class="user_option">
+      
+      
+                    <a href="/admin" class="order_online" style="color: black; border: solid black;">
+                      Admin Login
+                    </a>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </header>
+          <!-- end header section -->
+        </div>
+
+        <div id="form-outer">
+        <p id="description"> Let us know how can we improve</p>
+        <form id="survey-form" method="GET" action="https://crossorigin.me/https://freecodecamp.com">
+           <div class="rowTab">
+              <div class="labels">
+                <label id="name-label" for="name">* Name: </label>
+              </div>
+              <div class="rightTab">
+                <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+              </div>
+            </div>
+          <div class="rowTab">
+              <div class="labels">
+                <label id="email-label" for="email">* Email: </label>
+              </div>
+              <div class="rightTab">
+                <input type="email" name="email" id="email" class="input-field" required placeholder="Enter your Email">
+              </div>
+            </div>
+            <div class="rowTab">
+              <div class="labels">
+                <label id="number-label" for="age">* Age: </label>
+              </div>
+              <div class="rightTab">
+                <input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="Age">
+              </div>
+            </div>
+        
+          
+        <div class="rightTab">
+              <div class="labels">
+                <label for="preferences">Things that should be improved in the future<br>(Check all that apply): </label>
+              </div>
+              <div class="rightTab">
+                <ul id="preferences" style="list-style: none;">
+                  <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">Food Quality</label></li>
+                  <li class="checkbox"><input name="prefer" value="2" type="checkbox" class="userRatings">Services</li>
+                  <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings">Interior</label></li>
+                  <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="userRatings">Menu</label></li>
+                  <li class="checkbox"><label><input name="prefer" value="5" type="checkbox" class="userRatings">Food taste</label></li>
+                  </ul>
+              </div>
+            </div>
+        <div class="rowTab">
+              <div class="labels">
+                <label for="comments">Any Comments or Suggestions?</label>
+              </div>
+              <div class="rightTab">
+                <textarea id="comments" class="input-field" style="height:50px; resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
+              </div>
+            </div>
+              <input id="submit" type="submit" style="height:40px; width: 100px; background: orange; border-radius: 9px;" >
+          </form>
+        </div>
+
+
+                <!-- footer section -->
+      
+                <footer class="footer_section">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-4 footer-col">
+                        <div class="footer_contact">
+                          <h4>
+                            Contact Us
+                          </h4>
+                          <div class="contact_link_box">
+                            <a href="">
+                              <i class="fa fa-map-marker" aria-hidden="true"></i>
+                              <span>
+                                Location
+                              </span>
+                            </a>
+                            <a href="">
+                              <i class="fa fa-phone" aria-hidden="true"></i>
+                              <span>
+                                Call +01 1234567890
+                              </span>
+                            </a>
+                            <a href="">
+                              <i class="fa fa-envelope" aria-hidden="true"></i>
+                              <span>
+                                demo@gmail.com
+                              </span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 footer-col">
+                        <div class="footer_detail">
+                          <a href="" class="footer-logo">
+                            bon appetit
+                          </a>
+                          <p>
+                            Necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with
+                          </p>
+                          <div class="footer_social">
+                            <a href="">
+                              <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a>
+                            <a href="">
+                              <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </a>
+                            <a href="">
+                              <i class="fa fa-linkedin" aria-hidden="true"></i>
+                            </a>
+                            <a href="">
+                              <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+                            <a href="">
+                              <i class="fa fa-pinterest" aria-hidden="true"></i>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 footer-col">
+                        <h4>
+                          Opening Hours
+                        </h4>
+                        <p>
+                          Everyday
+                        </p>
+                        <p>
+                          10.00 Am -10.00 Pm
+                        </p>
+                      </div>
+                    </div>
+              
+                  </div>
+                </footer>
+              
+                <!-- footer section -->
+
+                
+      </body>
+      </html>
