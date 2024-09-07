@@ -40,49 +40,50 @@
       <img src="Static/images/new2.png" alt="">
     </div>
           <!-- header section strats -->
-          <header class="header_section">
-            <div class="container">
-              <nav class="navbar navbar-expand-lg custom_nav-container ">
-                <a class="navbar-brand" href="index.html">
-                  <span>
-                    bon appetit
-                  </span>
-                </a>
-      
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class=""> </span>
-                </button>
-      
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav  mx-auto ">
-                    <li class="nav-item">
-                      <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link " href="menu.html">Menu</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="book_table.html">Book Table</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="feedback.html">Feedback</a>
-                    </li>
-                  </ul>
-                  <div class="user_option">
-      
-      
-                    <a href="/admin" class="order_online" style="color: black; border: solid black;">
-                      Admin Login
-                    </a>
-                  </div>
-                </div>
-              </nav>
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              bon appetit
+            </span>
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  mx-auto ">
+              <li class="nav-item {% block home_status %}{% endblock home_status %}">
+                <a class="nav-link" href="{% url 'Home' %}">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item {% block menu_status %}{% endblock menu_status %}">
+                <a class="nav-link " href="{% url 'Menu' %}">Menu</a>
+              </li>
+              <li class="nav-item {% block about_status %}{% endblock about_status %}">
+                <a class="nav-link" href="{% url 'About' %}">About</a>
+              </li>
+              <li class="nav-item {% block table_status %}{% endblock table_status %}">
+                <a class="nav-link" href="{% url 'Book_Table' %}">Book Table</a>
+              </li>
+              <li class="nav-item {% block feedback_status %}{% endblock feedback_status %}">
+                <a class="nav-link" href="{% url 'Feedback_Form' %}">Feedback</a>
+              </li>
+            </ul>
+            <div class="user_option">
+
+
+              <a href="/admin" class="order_online" style="color: black; border: solid black;">
+                Admin Login
+              </a>
             </div>
-          </header>
-          <!-- end header section -->
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
   </div>
 
 
